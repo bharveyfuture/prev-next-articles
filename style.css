@@ -1,0 +1,51 @@
+.sequential-article {
+  position: fixed;
+  bottom: 20%;
+  font-size: 0;
+}
+
+.sequential-article.prev {
+  left: -137px;
+  transition: left 0.2s ease-in-out;
+}
+
+.sequential-article.prev.show {
+  left: 0;
+}
+
+.sequential-article.next {
+  right: -137px;
+  transition: right 0.2s ease-in-out;
+}
+
+.sequential-article.next.show {
+  right: 0;
+}
+
+.sequential-btn {
+  border: none;
+  padding: 0;
+  line-height: 0;
+  display: inline-block;
+}
+
+.appear .sequential-article {
+  opacity: 0;
+  /*transition: opacity 0.5s ease-in-out;*/
+}
+
+.appear .sequential-article.prev {
+  transition: opacity 0.5s ease-in-out, left 0.2s ease-in-out;
+}
+
+.appear .sequential-article.next {
+  transition: opacity 0.5s ease-in-out, right 0.2s ease-in-out;
+}
+
+.appear .sequential-article.active {
+  opacity: 1;
+}
+
+.sequential-article .article-image {
+  display: inline-block;
+}
